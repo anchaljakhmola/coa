@@ -1,0 +1,37 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+  <div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--10-col mdl-cell--1-offset mdl-cell--4-col-phone mdl-cell--8-col-tablet">
+      <div class="mdl-grid">
+        <div class="mdl-cell--12-col info-card">
+
+          <div class="mdl-grid info-card-title">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h5>Forthcoming Events</h5>
+            </div>
+          </div>
+          <div class="mdl-grid info-card-content">
+            <div class="mdl-cell mdl-cell--12-col">
+              {%for event in events %}
+                <div class="mdl-grid event-info">
+                  <div class="mdl-cell mdl-cell--1-col event-date">
+                    <h5>{{event.day}}</h5>
+                    <h7>{{event.month}}</h7>
+                  </div>
+                  <div class="mdl-cell mdl-cell--11-col event-desc">
+                    <div class="mdl-grid">
+                      <div class="mdl-cell mdl-cell--12-col event-title"><strong>{{event.title}}</strong></div>
+                      <div class="mdl-cell mdl-cell--12-col event-detail">{{event.detail}}</div>
+                    </div>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+
+        <div><!-- infor card ends here -->
+      </div>
+    </div>
+  </div>
+{% endblock %}

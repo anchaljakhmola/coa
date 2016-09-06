@@ -1,0 +1,93 @@
+{% extends 'layout.html.twig' %}
+
+
+{% block add_css_here %}
+  <link rel="stylesheet" href="{{asset('bundles/framework/css/camera.css')}}">
+  <link rel="stylesheet" href="{{asset('bundles/framework/css/paper-collapse.min.css')}}">
+{% endblock %}
+
+
+{% block content %}
+  <div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--10-col-desktop mdl-cell--4-col-phone mdl-cell--8-col-tablet mdl-cell--1-offset-desktop">
+
+      <!-- add content here -->
+
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--12-col">
+          <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--12-col deans-img">
+              <img src="/bundles/framework/images/{{deanImgPath}}">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-offset-desktop mdl-cell--4-col-phone mdl-cell--8-col-tablet deans-name">
+          <h4>{{deanName}}</h4>
+          <h6>Dean, College of Agriculture</h6>
+        </div>
+      </div>
+
+
+      <br><br>
+
+      <div class="deanOffice-tabs mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+        <div class="mdl-tabs__tab-bar">
+            <a href="#msg-panel" class="mdl-tabs__tab is-active">Dean's Message</a>
+            <a href="#lannisters-panel" class="mdl-tabs__tab">Lannisters</a>
+            <a href="#targaryens-panel" class="mdl-tabs__tab">Targaryens</a>
+        </div>
+
+        <div class="mdl-tabs__panel is-active" id="msg-panel">
+
+          <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--12-col info-card">
+              <div class="mdl-grid info-card-title">
+                <div class="mdl-cell mdl-cell--12-col">
+                  <h5>From Dean's Desk</h5>
+                </div>
+              </div>
+              <div class="mdl-grid info-card-content">
+                <div class="mdl-cell mdl-cell--12-col">
+                  <span>
+                    {{deanMsg}}
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="mdl-tabs__panel" id="lannisters-panel">
+          <ul>
+            <li>Tywin</li>
+            <li>Cersei</li>
+            <li>Jamie</li>
+            <li>Tyrion</li>
+          </ul>
+        </div>
+        <div class="mdl-tabs__panel" id="targaryens-panel">
+          <ul>
+            <li>Viserys</li>
+            <li>Daenerys</li>
+          </ul>
+        </div>
+      </div>`
+
+
+
+      <!-- content ends here -->
+
+    </div>
+  </div>
+{% endblock %}
+
+
+{% block add_js_here %}
+
+  <script src="{{asset('bundles/framework/js/jquery.min.js')}}"></script>
+  <script src="{{asset('bundles/framework/js/paper-collapse.min.js')}}"></script>
+
+{% endblock %}

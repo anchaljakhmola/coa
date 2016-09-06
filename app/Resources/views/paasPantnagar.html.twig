@@ -1,0 +1,26 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+  <div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--10-col mdl-cell--1-offset mdl-cell--4-col-phone mdl-cell--8-col-tablet">
+      <div class="mdl-grid">
+        <div class="mdl-cell--12-col info-card">
+
+          <div class="mdl-grid info-card-title">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h5>A brief intro</h5>
+            </div>
+          </div>
+          <div class="mdl-grid info-card-content">
+            <div class="mdl-cell mdl-cell--12-col">
+              <span>
+                {{paasIntro}}
+              </span>
+            </div>
+          </div>
+
+        <div><!-- infor card ends here -->
+      </div>
+    </div>
+  </div>
+{% endblock %}

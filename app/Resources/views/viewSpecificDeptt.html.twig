@@ -1,0 +1,100 @@
+
+{% extends 'layout.html.twig' %}
+
+
+
+{% block add_css_here %}
+  <link rel="stylesheet" href="/css/easy-responsive-tabs.css">
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="dept-info mdl-grid">
+
+  <div class="mdl-cell mdl-cell--10-col-desktop mdl-cell--4-col-phone mdl-cell--8-col-tablet mdl-cell--1-offset-desktop">
+
+    <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+      <div class="mdl-tabs__tab-bar">
+          <a href="#about-panel" class="mdl-tabs__tab is-active">About</a>
+          <a href="#mandate-panel" class="mdl-tabs__tab">Mandate</a>
+          <a href="#faculty-panel" class="mdl-tabs__tab">Faculty</a>
+          <a href="#course-panel" class="mdl-tabs__tab">Course Programmes</a>
+          <a href="#staff-panel" class="mdl-tabs__tab">Staff</a>
+          <a href="#alumni-panel" class="mdl-tabs__tab">Almuni</a>
+          <a href="#contact-panel" class="mdl-tabs__tab">Contact Details</a>
+      </div>
+
+      <div class="mdl-tabs__panel is-active" id="about-panel">
+        <ul>
+          <li>Eddard</li>
+          <li>Catelyn</li>
+          <li>Robb</li>
+          <li>Sansa</li>
+          <li>Brandon</li>
+          <li>Arya</li>
+          <li>Rickon</li>
+        </ul>
+      </div>
+      <div class="mdl-tabs__panel" id="mandate-panel">
+        <ul>
+          <li>Tywin</li>
+          <li>Cersei</li>
+          <li>Jamie</li>
+          <li>Tyrion</li>
+        </ul>
+      </div>
+      <div class="mdl-tabs__panel" id="faculty-panel">
+        <ul>
+          <li>Viserys</li>
+          <li>Daenerys</li>
+        </ul>
+      </div>
+
+      <div class="mdl-tabs__panel" id="course-panel">
+        <ul>
+          <li>Eddard</li>
+          <li>Catelyn</li>
+          <li>Robb</li>
+          <li>Sansa</li>
+          <li>Brandon</li>
+          <li>Arya</li>
+          <li>Rickon</li>
+        </ul>
+      </div>
+      <div class="mdl-tabs__panel" id="staff-panel">
+        <ul>
+          <li>Tywin</li>
+          <li>Cersei</li>
+          <li>Jamie</li>
+          <li>Tyrion</li>
+        </ul>
+      </div>
+      <div class="mdl-tabs__panel" id="alumni-panel">
+        <ul>
+          <li>Viserys</li>
+          <li>Daenerys</li>
+        </ul>
+      </div>
+      <div class="mdl-tabs__panel" id="contact-panel">
+        <ul>
+          <li>Eddard</li>
+          <li>Catelyn</li>
+          <li>Robb</li>
+          <li>Sansa</li>
+          <li>Brandon</li>
+          <li>Arya</li>
+          <li>Rickon</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+{% endblock %}

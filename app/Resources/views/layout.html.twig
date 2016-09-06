@@ -1,0 +1,228 @@
+<!-- College of Agriculture, G.B.P.U.A&T Pantnagar -->
+<!--                                               -->
+<!--                                               -->
+<!-- Site Developed and designed by                -->
+<!-- - - - - - - - - - - - - - - - - - -  - - - -  -->
+<!-- - - - - - - - - - - - - - - - - - -  - - - -  -->
+<!-- Shubham Oli (oli.shubham@gmail.com)           -->
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}} || College of Agriculture</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.teal-amber.min.css">
+  <link rel="stylesheet" href="{{ asset('bundles/framework/css/style.css') }}">
+  <link rel="stylesheet" href="{{ asset('bundles/framework/css/drawer.css') }}">
+  {% block add_css_here %}{% endblock %}
+</head>
+<body>
+
+
+  <!-- Container for whole page -->
+  <div id="container">
+
+    <!-- this will be hidden in smaller viewports -->
+    <nav id="top-nav" class="mdl-grid mdl-cell--hide-phone mdl-cell--hide-tablet">
+      <div class="mdl-cell mdl-cell--12-col">
+        <ul class="top-menu-items">
+          <li>link 1</li>
+          <li>link 2</li>
+          <li>link 3</li>
+          <li>link 4</li>
+          <li>link 5</li>
+          <li>link 6</li>
+          <li>link 7</li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- for smaller viewports -->
+    <nav id="top-nav-small" class="mdl-grid mdl-cell--hide-desktop">
+      <div class="mdl-cell mdl-cell--12-col">
+        <ul class="top-menu-items">
+          <li>link 1</li>
+          <li>link 2</li>
+          <li>link 3</li>
+          <li>link 4</li>
+          <li>link 5</li>
+          <li>link 6</li>
+        </ul>
+      </div>
+    </nav>
+
+    <header id="header-large-screen" class="mdl-grid mdl-cell--hide-phone mdl-cell--hide-tablet">
+
+      <div class="mdl-cell mdl-cell--7-col mdl-cell--3-offset">
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--11-col mdl-cell--1-offset">
+            <div class="mdl-grid">
+              <div class="mdl-cell mdl-cell--3-col" id="university-logo">
+                <!-- logo installed using css -->
+              </div>
+              <div class="mdl-cell mdl-cell--9-col" id="university-name">
+                <div class="mdl-grid">
+                  <div class="mdl-cell mdl-cell--12-col">
+                    <h2>College of Agriculture</h2>
+                  </div>
+                  <div class="mdl-cell mdl-cell--12-col">
+                    <h4>G. B. Pant University of agriculture and Tech., Pantnagar</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+
+    <!-- Header section for tablets and phone, will be hidden on larger screens-->
+    <header id="header-small" class="mdl-cell--hide-desktop">
+      <div class="mdl-grid">
+        <div id="drawer" class="mdl-cell mdl-cell--1-col">
+          <div class="mdl-layout mdl-js-layout">
+            <div class="mdl-layout__drawer">
+              <span class="mdl-layout-title">College of Agriculture</span>
+              <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="/">Home</a>
+                <a class="mdl-navigation__link" href="/deans-office/">Dean's office</a>
+                <a class="mdl-navigation__link" href="/departments/">Departments</a>
+                <a class="mdl-navigation__link" href="/paas-pantnagar/">P.A.A.S</a>
+                <a class="mdl-navigation__link" href="/training-placements/">T. &amp; P.</a>
+                <a class="mdl-navigation__link" href="/upcoming-events/">Upcoming Events</a>
+                <a class="mdl-navigation__link" href="/contact/">Contact us</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div id="college-branding" class="mdl-cell mdl-cell--3-col-phone mdl-cell--7-col-tablet">
+          <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--4-col-phone mdl-cell--8-col-tablet">
+              <h1>College</h1>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col-phone mdl-cell--8-col-tablet">
+              <h1>of</h1>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col-phone mdl-cell--8-col-tablet">
+              <h1>Agriculture</h1>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+
+    <nav id="bottom-nav" class="mdl-grid mdl-cell--hide-phone mdl-cell--hide-tablet">
+      <div class="mdl-cell mdl-cell--12-col">
+        <div class="mdl-grid">
+          <ul>
+            <a href="/"><li><i class="fa fa-home"></i> Home</li></a>
+            <a href="/deans-office/"><li>Dean's Office</li></a>
+            <a href="/department/s"><li>Departments</li></a>
+            <a href="/paas-pantnagar/"><li>P. A. A. S.</li></a>
+            <a href="/training-placements/"><li>Training &amp; Place.</li></a>
+            <a href="/upcoming-events/"><li>Upcoming Events</li></a>
+            <a href="/contact/"><li>Contact us</li></a>
+          </ul>
+      </div>
+    </nav>
+
+
+
+
+
+
+    <!-- Content section for page -->
+    <section id="contentWrapper">
+      <div class="mdl-grid">
+        <div id="content" class="mdl-cell mdl-cell--12-col mdl-cell--8-tablet mdl-cell--4-phone">
+          {% block content %}{% endblock %}
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <!-- Footer section for page -->
+    <footer class="mdl-mega-footer mdl-grid">
+      <div class="mdl-cell--1-offset-desktop mdl-cell--10-col mdl-cell--8-tablet mdl-cell--4-phone">
+      <div class="mdl-mega-footer__middle-section">
+
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">Features</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Updates</a></li>
+          </ul>
+        </div>
+
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">Details</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="#">Specs</a></li>
+            <li><a href="#">Tools</a></li>
+            <li><a href="#">Resources</a></li>
+          </ul>
+        </div>
+
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">Technology</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="#">How it works</a></li>
+            <li><a href="#">Patterns</a></li>
+            <li><a href="#">Usage</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contracts</a></li>
+          </ul>
+        </div>
+
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">FAQ</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="#">Questions</a></li>
+            <li><a href="#">Answers</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="mdl-mega-footer__bottom-section">
+        <div class="mdl-logo">Title</div>
+        <ul class="mdl-mega-footer__link-list">
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Privacy & Terms</a></li>
+        </ul>
+      </div>
+    </div>
+    </footer>
+
+  </div>
+
+
+
+
+  <!-- required JS files -->
+  <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+  {% block add_js_here %}{% endblock %}
+  <script src="{{ asset('bundles/framework/js/script.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+
+{% extends 'layout.html.twig' %}
+
+{% block add_css_here %}
+  <link rel="stylesheet" href="{{asset('bundles/framework/css/camera.css')}}">
+{% endblock %}
+
+{% block content %}
+
+  <div class="mdl-grid carousel-block">
+    <div class="mdl-cell mdl-cell--12-col">
+      <div class="camera_wrap">
+        {% for img_item in images %}
+          <div data-src="/bundles/framework/images/{{img_item}}"></div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <br><br>
+
+  <div class="mdl-grid info-block">
+    <div class="mdl-cell mdl-cell--10-col mdl-cell--1-offset-desktop">
+      <div class="mdl-grid">
+
+        <!-- left section for other information and useful links -->
+        <div class="mdl-cell mdl-cell--8-col mdl-cell--8-col-tablet mdl-cell--4-col-phone info-card">
+
+
+        </div>
+
+        <!-- right sidebar for latest news and announcements -->
+        <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-cell--4-col-phone latest-news-div info-card">
+
+          <div class="mdl-grid title-section">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h4>Latest News | </h4>
+              <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="/upcoming-events/">All news</a>
+            </div>
+          </div>
+
+          <div class="mdl-grid news-section">
+            {% for item in news %}
+              {% if loop.index <= limit %}
+                <div class="mdl-cell mdl-cell--12-col">
+                  <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--1-col-phone mdl-cell--2-col-tablet date-display-side">
+                      <h4>{{item.day}}</h4>
+                      <h6>{{item.month}}</h6>
+                    </div>
+                    <div class="mdl-cell mdl-cell--9-col mdl-cell--3-col-phone mdl-cell--6-col-tablet news-display-side">
+                      <a href="/upcoming-events{{item.url}}" target="_blank"><strong>{{item.title}}</strong></a>
+                    </div>
+                  </div>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block add_js_here %}
+
+  <script src="{{asset('bundles/framework/js/jquery.min.js')}}"></script>
+  <script src="{{asset('bundles/framework/js/jquery.easing.1.3.js')}}"></script>
+  <script src="{{asset('bundles/framework/js/jquery.mobile.customized.min.js')}}"></script>
+  <script src="{{asset('bundles/framework/js/camera.min.js')}}"></script>
+
+{% endblock %}
