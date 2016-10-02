@@ -5,6 +5,7 @@
 
 {% block add_css_here %}
   <link rel="stylesheet" href="/css/easy-responsive-tabs.css">
+  <link rel="stylesheet" href="{{ asset('bundles/framework/css/facultieslist.css') }}">
 {% endblock %}
 
 
@@ -46,10 +47,33 @@
         </ul>
       </div>
       <div class="mdl-tabs__panel" id="faculty-panel">
-        <ul>
-          <li>Viserys</li>
-          <li>Daenerys</li>
-        </ul>
+
+<!--faculty list-->
+        <table class="mdl-data-table mdl-js-data-table  mdl-shadow--2dp sizetable">
+          <thead>
+          <tr>
+            <th class="mdl-data-table">S.NO.</th>
+              <th>Name</th>
+              <th>Designation</th>
+          </tr>
+          </thead>
+          <tbody>
+
+        {% for faculty in faculties %}
+
+          <tr class="text">
+              <td class="mdl-data-table sizecolumn">{{loop.index}}</td>
+              <td><a href="/faculty/{{faculty["slug"]}}/" class="link">{{faculty["name"]}}</a></td>
+              <td>{{faculty["designation"]}}</td>
+          </tr>
+
+
+        {% endfor %}
+
+          </tbody>
+          </table>
+
+
       </div>
 
       <div class="mdl-tabs__panel" id="course-panel">
@@ -93,8 +117,5 @@
   </div>
 
 </div>
-
-
-
 
 {% endblock %}

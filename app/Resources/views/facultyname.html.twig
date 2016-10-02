@@ -1,0 +1,188 @@
+{% extends 'layout.html.twig' %}
+
+{% block add_css_here %}
+  <link rel="stylesheet" href="{{ asset('bundles/framework/css/faculty_name.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--10-col mdl-cell--1-offset-desktop mdl-cell--4-col-phone mdl-cell--8-col-tablet">
+    <div class="mdl-grid">
+      <div class="mdl-cell--12-col info-card">
+
+        <!-- user defined content here -->
+        <div class="mdl-tabs vertical-mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+	        <div class="mdl-grid mdl-grid--no-spacing">
+				    <div class="mdl-cell mdl-cell--3-col ">
+				      <div class="mdl-tabs__tab-bar left-menu">
+				         <a href="#tab1-panel" class="mdl-tabs__tab is-active">
+				      	     <span class="hollow-circle"></span>
+				      	      <strong>Brief Profile</strong>
+				         </a>
+				         <a href="#tab2-panel" class="mdl-tabs__tab">
+				      	      <span class="hollow-circle"></span>
+				      	      <strong>Detail to CV</strong>
+				         </a>
+				         <a href="#tab3-panel" class="mdl-tabs__tab">
+				      	      <span class="hollow-circle"></span>
+				            	<strong>Courses</strong>
+				         </a>
+                 <a href="#tab4-panel" class="mdl-tabs__tab">
+					      	      <span class="hollow-circle"></span>
+					      	      <strong>Student Advisory</strong>
+					       </a>
+                 <a href="#tab5-panel" class="mdl-tabs__tab">
+					      	      <span class="hollow-circle"></span>
+					      	      <strong>Research Project</strong>
+					       </a>
+                 <a href="#tab6-panel" class="mdl-tabs__tab">
+					      	      <span class="hollow-circle"></span>
+					      	      <strong>Other Activities</strong>
+					       </a>
+                 <a href="#tab7-panel" class="mdl-tabs__tab">
+					      	      <span class="hollow-circle"></span>
+					      	      <strong>Awards & Honours</strong>
+					       </a>
+                 <a href="#tab8-panel" class="mdl-tabs__tab">
+					      	      <span class="hollow-circle"></span>
+					      	      <strong>Publication</strong>
+					       </a>
+				     </div>
+				  </div>
+
+				  <div class="mdl-cell mdl-cell--9-col">
+			      <div class="mdl-tabs__panel is-active" id="tab1-panel">
+
+            <div class="mdl-grid">
+              <div class="mdl-cell mdl-cell--12-col">
+                <div class="mdl-grid">
+                  <div class="mdl-cell mdl-cell--12-col deans-img">
+                    <img src="/bundles/framework/images/{{deanImgPath}}">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mdl-grid">
+              <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-offset-desktop mdl-cell--4-col-phone mdl-cell--8-col-tablet deans-name">
+                <h4>{{deanName}}</h4>
+                <h6>Dean, College of Agriculture</h6>
+              </div>
+            </div>
+            
+
+			      </div>
+			      <div class="mdl-tabs__panel" id="tab2-panel">
+
+                <img src="/bundles/framework/images/pdfsign.jpg" class="pdfsize">
+                <a href="" class="pdflink">click to download</a>
+
+				    </div>
+						<div class="mdl-tabs__panel" id="tab3-panel">
+
+              <table class="mdl-data-table mdl-js-data-table tablesize">
+                <thead>
+                  <tr>
+                    <th class="mdl-data-table__cell--non-numeric">Course Name</th>
+                    <th>Course No.</th>
+                    <th>Credits</th>
+                  </tr>
+                </thead>
+                  <tbody>
+                    <tr>
+                      <td class="mdl-data-table__cell--non-numeric">Don Aubrey</td>
+                      <td>25</td>
+                      <td>49021</td>
+                    </tr>
+                    <tr>
+                      <td class="mdl-data-table__cell--non-numeric">Sophia Carson</td>
+                      <td>32</td>
+                      <td>10258</td>
+                    </tr>
+                    <tr>
+                      <td class="mdl-data-table__cell--non-numeric">Steve Moreno</td>
+                      <td>29</td>
+                      <td>12359</td>
+                    </tr>
+                  </tbody>
+              </table>
+
+			      </div>
+            <div class="mdl-tabs__panel" id="tab4-panel">
+				         Content 4
+						</div>
+            <div class="mdl-tabs__panel" id="tab5-panel">
+				         Content 5
+						</div>
+            <div class="mdl-tabs__panel" id="tab6-panel">
+				         Content 6
+						</div>
+            <div class="mdl-tabs__panel" id="tab7-panel">
+
+              <table class="mdl-data-table mdl-js-data-table tablesize">
+                <thead>
+                  <tr>
+                    <th class="mdl-data-table__cell--non-numeric">Course Name</th>
+                    <th>Course No.</th>
+                    <th>Credits</th>
+                  </tr>
+                </thead>
+                  <tbody>
+                    <tr>
+                      <td class="mdl-data-table__cell--non-numeric">Don Aubrey</td>
+                      <td>25</td>
+                      <td>49021</td>
+                    </tr>
+                    <tr>
+                      <td class="mdl-data-table__cell--non-numeric">Sophia Carson</td>
+                      <td>32</td>
+                      <td>10258</td>
+                    </tr>
+                    <tr>
+                      <td class="mdl-data-table__cell--non-numeric">Steve Moreno</td>
+                      <td>29</td>
+                      <td>12359</td>
+                    </tr>
+                  </tbody>
+              </table>
+
+						</div>
+            <div class="mdl-tabs__panel" id="tab8-panel">
+
+              <table class="mdl-data-table mdl-js-data-table tablesize">
+                <thead>
+                  <tr>
+                    <th class="mdl-data-table__cell--non-numeric">Course Name</th>
+                    <th>Course No.</th>
+                    <th>Credits</th>
+                  </tr>
+                </thead>
+                  <tbody>
+                    <tr>
+                      <td class="mdl-data-table__cell--non-numeric">Don Aubrey</td>
+                      <td>25</td>
+                      <td>49021</td>
+                    </tr>
+                    <tr>
+                      <td class="mdl-data-table__cell--non-numeric">Sophia Carson</td>
+                      <td>32</td>
+                      <td>10258</td>
+                    </tr>
+                    <tr>
+                      <td class="mdl-data-table__cell--non-numeric">Steve Moreno</td>
+                      <td>29</td>
+                      <td>12359</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+						</div>
+			    </div>
+  			</div>
+        <!-- user defined content ends here -->
+
+  		</div>
+    </div>
+  </div>
+</div>
+{% endblock %}

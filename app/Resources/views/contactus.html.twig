@@ -2,20 +2,44 @@
 
 {% block content %}
   <div class="mdl-grid">
-    <div class="mdl-cell mdl-cell--10-col mdl-cell--1-offset mdl-cell--4-col-phone mdl-cell--8-col-tablet">
+    <div class="mdl-cell mdl-cell--10-col mdl-cell--1-offset-desktop mdl-cell--4-col-phone mdl-cell--8-col-tablet">
       <div class="mdl-grid">
         <div class="mdl-cell--12-col info-card">
 
           <div class="mdl-grid info-card-title">
             <div class="mdl-cell mdl-cell--12-col">
-              <h5>Conatct us</h5>
+              <h5><strong>Contact us</strong></h5>
+              <hr>
             </div>
           </div>
           <div class="mdl-grid info-card-content">
             <div class="mdl-cell mdl-cell--12-col">
-              <span>
+              <div class="mdl-grid">
+                {% for contact in contactList %}
 
-              </span>
+                <div class="mdl-cell mdl-cell--4-col-desktop">
+                  <div class="mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title">
+                      <h2 class="mdl-card__title-text">{{contact["name"]}}</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">{{contact["designation"]}}</div>
+                    <div class="mdl-card__actions mdl-card--border">
+                      <div class="mdl-card__actions">
+
+                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                        <i class="material-icons">call</i>
+                        </button>
+                        {{contact["phoneNumber"]}}
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- first card ends here -->
+                {% endfor %}
+
+
+              </div>
             </div>
           </div>
 
